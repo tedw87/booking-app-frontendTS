@@ -1,4 +1,4 @@
-import SearchGroupButtons from "./SearchGroupButtons";
+import SearchGroupButtons from "./SearchGroupButtons.tsx";
 import Logo from "../images/logo.png";
 
 const HeaderComponent = () => {
