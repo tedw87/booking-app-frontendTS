@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Card from "react-bootstrap/Card";
+import "font-awesome/css/font-awesome.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import bookingPhoto1 from "../images/cabana.jpeg";
 import bookingPhoto2 from "../images/caban4.jpg";
@@ -7,9 +8,14 @@ import bookingPhoto3 from "../images/cabana2.jpg";
 
 const CardComponent = () => {
   const [index, setIndex] = useState<number>(0);
+  const [filled, setFilled] = useState<boolean>(false);
 
   const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);
+  };
+
+  const toggleFilled = () => {
+    setFilled(!filled);
   };
 
   return (
@@ -38,11 +44,19 @@ const CardComponent = () => {
         </Carousel.Item>
       </Carousel>
       <Card.Body>
-        <Card.Title className="fs-6">Rasnov, Romania</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <div className="d-flex justify-content-between align-items-center">
+          <Card.Title className="fs-6 mb-1">Rasnov, Romania</Card.Title>
+          <i
+            className={`fa ${filled ? "fa-heart red-heart" : "fa-heart-o"}`}
+            onClick={toggleFilled}
+            title="Add to favorites"
+          ></i>
+        </div>
+        <Card.Text className="fs-10 m-0 text-muted">
+          Types of view here
         </Card.Text>
+        <Card.Text className="text-small mb-1 text-muted">Sep 15-20</Card.Text>
+        <Card.Title className="fs-6 mb-2s m-0">100$ night</Card.Title>
       </Card.Body>
     </Card>
   );
