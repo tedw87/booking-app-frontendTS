@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import "font-awesome/css/font-awesome.min.css";
 import Carousel from "react-bootstrap/Carousel";
@@ -22,11 +23,13 @@ const CardComponent = () => {
     <Card className="custom-card">
       <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
         <Carousel.Item>
-          <img
-            className="d-block w-100 carousel-image"
-            src={bookingPhoto1}
-            alt="First slide"
-          />
+          <Link to="/room-details">
+            <img
+              className="d-block w-100 carousel-image"
+              src={bookingPhoto1}
+              alt="First slide"
+            />
+          </Link>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -56,7 +59,7 @@ const CardComponent = () => {
           Types of view here
         </Card.Text>
         <Card.Text className="text-small mb-1 text-muted">Sep 15-20</Card.Text>
-        <Card.Title className="fs-6 mb-2s m-0">100$ night</Card.Title>
+        <Card.Title className="fs-6 mb-2s m-0">100$</Card.Title>
       </Card.Body>
     </Card>
   );

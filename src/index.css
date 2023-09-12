@@ -151,8 +151,8 @@ button:focus-visible {
 
 .custom-card {
   height: 380px !important;
-  border: none !important; /* Remove border */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add drop shadow */
+  border: none !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 20px !important;
 }
 
@@ -183,4 +183,8 @@ button:focus-visible {
 .ant-picker-input {
   border-radius: 0 !important;
   margin-right: 2px;
+}
+
+.login-icon {
+  color: lightgrey;
 }
