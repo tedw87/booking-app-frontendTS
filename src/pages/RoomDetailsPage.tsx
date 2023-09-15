@@ -10,10 +10,10 @@ const RoomDetailsPage = () => {
         <RoomDetailsImageGridComponent />
       </Row>
       <Row className="no-gutter">
-        <Col md={7} className="no-gutter p-1">
+        <Col md={8} className="no-gutter p-1">
           <CardAmenitiesComponent />
         </Col>
-        <Col md={5} className="no-gutter p-1">
+        <Col md={4} className="no-gutter p-1">
           <CardReserveComponent />
         </Col>
       </Row>

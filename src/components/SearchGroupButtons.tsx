@@ -13,7 +13,7 @@ const SearchGroupButtons: React.FC = () => {
         className="form-control rounded-left-input"
         placeholder="Where?"
       />
-      <RangePicker className="ant-picker-input" />
+      <RangePicker className="ant-picker-input-header" />
       <Button variant="light" className="search-button">
         <i className="fa fa-search "></i>
       </Button>
