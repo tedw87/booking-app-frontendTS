@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import RoomDetailsImageGridComponent from "../components/RoomDetailsImageGridComponent.tsx";
 import CardReserveComponent from "../components/CardReserveComponent.tsx";
 import CardAmenitiesComponent from "../components/CardAmenitiesComponent.tsx";
+import PageDetailsMap from "../components/PageDetailsMapComponent.tsx";
 
 const RoomDetailsPage = () => {
   return (
@@ -18,7 +19,9 @@ const RoomDetailsPage = () => {
         </Col>
       </Row>
       <Row>
-        <Col></Col>
+        <Col>
+          <PageDetailsMap />
+        </Col>
       </Row>
     </Container>
   );
