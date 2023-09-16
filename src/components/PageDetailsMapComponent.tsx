@@ -1,4 +1,5 @@
 import { GoogleMap, useLoadScript } from "@react-google-maps/api";
+import mapStyle from "../helpers/mapstyles";
 
 const PageDetailsMap: React.FC = () => {
   const { isLoaded } = useLoadScript({
@@ -14,9 +15,10 @@ export default PageDetailsMap;
 function Map() {
   return (
     <GoogleMap
-      zoom={10}
-      center={{ lat: 44, lng: -80 }}
+      zoom={5}
+      center={{ lat: 45.89, lng: 24.89 }}
       mapContainerClassName="map-container"
+      options={{ styles: mapStyle }}
     ></GoogleMap>
   );
 }

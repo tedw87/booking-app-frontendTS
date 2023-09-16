@@ -21,31 +21,35 @@ const CardComponent = () => {
 
   return (
     <Card className="custom-card">
-      <Link to="/room-details">
-        <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-          <Carousel.Item>
+      <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
+        <Carousel.Item>
+          <Link to="/room-details">
             <img
               className="d-block w-100 carousel-image"
               src={bookingPhoto1}
               alt="First slide"
             />
-          </Carousel.Item>
-          <Carousel.Item>
+          </Link>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Link to="/room-details">
             <img
               className="d-block w-100 carousel-image"
               src={bookingPhoto2}
               alt="Second slide"
             />
-          </Carousel.Item>
-          <Carousel.Item>
+          </Link>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Link to="/room-details">
             <img
               className="d-block w-100 carousel-image"
               src={bookingPhoto3}
               alt="Third slide"
             />
-          </Carousel.Item>
-        </Carousel>
-      </Link>
+          </Link>
+        </Carousel.Item>
+      </Carousel>
       <Card.Body>
         <div className="d-flex justify-content-between align-items-center">
           <Card.Title className="fs-6 mb-1">Rasnov, Romania</Card.Title>
