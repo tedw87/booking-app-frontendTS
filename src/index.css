@@ -35,20 +35,6 @@
   align-items: center;
 }
 
-@media (max-width: 600px) {
-  .logo-header {
-    display: none;
-  }
-  .header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .search-group-buttons {
-    width: 100%;
-  }
-}
-
 .logo-header {
   width: 8rem;
   margin-right: 10px;
@@ -178,4 +164,8 @@
   margin-bottom: 20px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.custom-cursor {
+  cursor: pointer !important;
 }

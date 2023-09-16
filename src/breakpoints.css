@@ -1,0 +1,35 @@
+@media (max-width: 600px) {
+  .logo-header {
+    display: none;
+  }
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-group-buttons {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .room-details-container {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .room-details-container {
+    width: 90% !important;
+  }
+}
+
+.responsive-card {
+  overflow-y: auto;
+}
+
+@media (min-width: 770px) {
+  .responsive-card {
+    overflow-y: hidden;
+  }
+}
