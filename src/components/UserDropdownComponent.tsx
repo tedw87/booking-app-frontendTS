@@ -10,7 +10,7 @@ const UserDropdownComponent = () => {
       key: "1",
       label: (
         <span
-          onClick={() => navigate("/signup")}
+          onClick={() => navigate("/register")}
           style={{ textDecoration: "none" }}
         >
           Signup
@@ -32,7 +32,7 @@ const UserDropdownComponent = () => {
       key: "3",
       label: (
         <span
-          onClick={() => navigate("/login")}
+          onClick={() => navigate("/add-room")}
           style={{ textDecoration: "none" }}
         >
           Add your place
@@ -43,7 +43,7 @@ const UserDropdownComponent = () => {
       key: "4",
       label: (
         <span
-          onClick={() => navigate("/profile")}
+          onClick={() => navigate("/user")}
           style={{ textDecoration: "none" }}
         >
           Profile
