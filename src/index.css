@@ -10,7 +10,9 @@ body {
 footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 99%;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -25,6 +27,16 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+.add-room-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .header {
@@ -173,6 +185,10 @@ footer {
   border: none;
   color: white;
   background-color: var(--pink);
+}
+
+.pink-button {
+  background-color: var(--pink) !important;
 }
 
 .map-container {
