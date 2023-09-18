@@ -7,7 +7,7 @@ const { RangePicker } = DatePicker;
 
 const SearchGroupButtons: React.FC = () => {
   return (
-    <ButtonGroup>
+    <ButtonGroup className="header-button-group">
       <input
         type="text"
         className="form-control rounded-left-input"

@@ -1,8 +1,11 @@
 import { Card, DatePicker, InputNumber, Button } from "antd";
+import { useNavigate } from "react-router";
 
 const { RangePicker } = DatePicker;
 
 const CardReserveComponent = () => {
+  const navigate = useNavigate();
+
   return (
     <Card
       title="Add dates for prices"
@@ -17,12 +20,17 @@ const CardReserveComponent = () => {
           className="rounded-bottom-input w-100  h-50"
           placeholder="Number of guests"
           style={{
-            textAlign: "center", // Center text horizontally
-            lineHeight: "50px", // Center text vertically
+            textAlign: "center",
+            lineHeight: "50px",
           }}
         />
       </div>
-      <Button className="reserve-button">Reserve</Button>
+      <Button
+        className="reserve-button"
+        onClick={() => navigate("/reserve-room")}
+      >
+        Reserve
+      </Button>
     </Card>
   );
 };

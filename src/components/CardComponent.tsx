@@ -52,18 +52,33 @@ const CardComponent = () => {
       </Carousel>
       <Card.Body>
         <div className="d-flex justify-content-between align-items-center">
-          <Card.Title className="fs-6 mb-1">Rasnov, Romania</Card.Title>
+          <Card.Title className="card-title-text mb-1">
+            Romania, Rasnov
+          </Card.Title>
+          <i className=" fa fa-star rating-star" title="rating">
+            <span>5</span>
+          </i>
+        </div>
+        <div className="d-flex flex-column justify-content-center align-items-center mt-3">
+          <Card.Text className="mb-1 card-available-text">
+            Sep 5th 23 - Sep 19th 22
+          </Card.Text>
+          <Card.Text className="fs-10 m-0 text-muted grey-card-text">
+            Cabin
+          </Card.Text>
+          <Card.Title className="card-price-text mb-3 mt-2">
+            123$/night
+          </Card.Title>
           <i
-            className={`fa ${filled ? "fa-heart red-heart" : "fa-heart-o"}`}
+            className={`fa ${
+              filled
+                ? "fa-heart fa-lg red-heart mt-1"
+                : "fa-heart fa-lg grey-heart mt-1"
+            }`}
             onClick={toggleFilled}
             title="Add to favorites"
           ></i>
         </div>
-        <Card.Text className="fs-10 m-0 text-muted">
-          Types of view here
-        </Card.Text>
-        <Card.Text className="text-small mb-1 text-muted">Sep 15-20</Card.Text>
-        <Card.Title className="fs-6 mb-2s m-0">100$</Card.Title>
       </Card.Body>
     </Card>
   );

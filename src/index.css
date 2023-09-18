@@ -1,14 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  position: relative;
+  min-height: 100%;
 }
+
+body {
+  margin-bottom: 120px !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 :root {
   --pink: #ca0087;
 }
 
 .custom-container {
   width: 90%;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -19,8 +30,8 @@
 .header {
   margin: 0;
   background-color: white;
-  box-shadow: 0px 3px 4px 1px rgba(200, 200, 200, 0.3);
-  height: 6rem;
+  box-shadow: 0px 3px 4px 4px rgba(200, 200, 200, 0.3);
+  height: 5rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -30,13 +41,19 @@
 .header-container {
   margin: 0;
   width: 90%;
+  max-width: 1600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.header-button-group {
+  width: 30rem;
+  height: 2rem;
+}
+
 .logo-header {
-  width: 8rem;
+  width: 7rem;
   margin-right: 10px;
 }
 
@@ -44,16 +61,10 @@
   margin: 0;
 }
 
-.search-group-buttons {
-  background-color: brown;
-  width: 20rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .search-button {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   margin-right: 5px;
   background-color: var(--pink) !important;
   color: white !important;
@@ -63,18 +74,19 @@
 .custom-col {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .custom-card {
-  height: 380px !important;
-  border: none !important;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* height: auto !important; */
+  border: 0.1px solid rgb(228, 228, 228) !important;
+  /* border: none !important; */
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
   border-radius: 20px !important;
 }
 
 .carousel-image {
-  height: 250px;
+  height: 210px;
   object-fit: cover;
   border-top-left-radius: 15px !important;
   border-top-right-radius: 15px !important;
@@ -86,6 +98,12 @@
 
 .red-heart {
   color: red;
+  border: none;
+}
+
+.grey-heart {
+  color: lightgray;
+  border: none;
 }
 
 .rounded-left-input {
@@ -168,4 +186,29 @@
 
 .custom-cursor {
   cursor: pointer !important;
+}
+
+.reserve-button.ant-btn:hover {
+  color: lightgrey !important;
+}
+
+.rating-star {
+  font-size: 15px !important;
+}
+
+.card-title-text {
+  font-size: 17px !important;
+}
+
+.grey-card-text {
+  font-size: 15px;
+}
+
+.card-available-text {
+  font-size: 14px;
+}
+
+.card-price-text {
+  font-size: 16px !important;
+  font-weight: bold;
 }
