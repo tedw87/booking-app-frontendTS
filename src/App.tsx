@@ -1,12 +1,19 @@
-import HeaderComponent from "./components/HeaderComponent";
-import HomePage from "./pages/HomePage.tsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// components
+import HeaderComponent from "./components/HeaderComponent";
+
+//publicly available pages
+import HomePage from "./pages/HomePage.tsx";
 import RoomDetailsPage from "./pages/RoomDetailsPage.tsx";
 import LoginPage from "./pages/LoginPage.tsx";
 import RegisterPage from "./pages/RegisterPage.tsx";
-import UserProfilePage from "./pages/UserProfilePage.tsx";
 import ProtectedRoutesComponent from "./components/ProtectedRoutesComponent.tsx";
+
+//protected user pages
+import UserProfilePage from "./pages/UserProfilePage.tsx";
 import AddRoomPage from "./pages/AddRoomPage.tsx";
+import RoomConfirmationPage from "./pages/RoomConfirmationPage.tsx";
 
 function App() {
   return (
@@ -23,6 +30,7 @@ function App() {
         <Route element={<ProtectedRoutesComponent userAuth={false} />}>
           <Route path="/user" element={<UserProfilePage />} />
           <Route path="/add-room" element={<AddRoomPage />} />
+          <Route path="/reserve-room" element={<RoomConfirmationPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
