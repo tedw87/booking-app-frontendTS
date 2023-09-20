@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, message, Steps, theme } from "antd";
 import SelectPropertyComponent from "../components/SelectPropertyComponent";
+import PropertyDetailsComponent from "../components/PropertyDetailsComponent";
 
 const steps = [
   {
@@ -9,7 +10,7 @@ const steps = [
   },
   {
     title: "Property Details",
-    content: "Second-content",
+    content: <PropertyDetailsComponent />,
   },
   {
     title: "Location",
